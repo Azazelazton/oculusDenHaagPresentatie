@@ -7392,7 +7392,11 @@ Transform:
   m_LocalScale: {x: .999999821, y: 1, z: .999999821}
   m_Children: []
   m_Father: {fileID: 1290464607}
+<<<<<<< HEAD
   m_RootOrder: 3
+=======
+  m_RootOrder: 0
+>>>>>>> origin/master
 --- !u!23 &199810218
 Renderer:
   m_ObjectHideFlags: 0
@@ -46113,6 +46117,7 @@ MonoBehaviour:
   rotateSpeed: 30
   rotor: {fileID: 559752370}
   rotorAcceleration: 50
+<<<<<<< HEAD
 --- !u!114 &1100858475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46127,6 +46132,9 @@ MonoBehaviour:
   occulusCamera: {fileID: 2110915487}
   normalCamera: {fileID: 1927301633}
   usesOcculus: 0
+=======
+  autoTurnSpeedOnLean: 1
+>>>>>>> origin/master
 --- !u!1 &1105113716
 GameObject:
   m_ObjectHideFlags: 0
@@ -54999,7 +55007,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1290464607}
+<<<<<<< HEAD
   m_RootOrder: 8
+=======
+  m_RootOrder: 5
+>>>>>>> origin/master
 --- !u!23 &1286623131
 Renderer:
   m_ObjectHideFlags: 0
@@ -55253,16 +55265,20 @@ Transform:
   m_LocalPosition: {x: 7.46000004, y: 5.13999987, z: 169.050003}
   m_LocalScale: {x: 6.38703871, y: 6.38704157, z: 6.38704252}
   m_Children:
+<<<<<<< HEAD
   - {fileID: 1699699883}
+=======
+  - {fileID: 199810217}
+>>>>>>> origin/master
   - {fileID: 1855792857}
   - {fileID: 470760876}
-  - {fileID: 199810217}
   - {fileID: 1869473314}
   - {fileID: 194682982}
+  - {fileID: 1286623130}
   - {fileID: 697598538}
   - {fileID: 1514925578}
-  - {fileID: 1286623130}
   - {fileID: 118797162}
+  - {fileID: 1927301634}
   - {fileID: 775477830}
   - {fileID: 1860274478}
   - {fileID: 1995392552}
@@ -82981,8 +82997,13 @@ Transform:
   m_LocalScale: {x: .156567082, y: .156567007, z: .156566992}
   m_Children:
   - {fileID: 968371168}
+<<<<<<< HEAD
   m_Father: {fileID: 1100858466}
   m_RootOrder: 12
+=======
+  m_Father: {fileID: 1290464607}
+  m_RootOrder: 9
+>>>>>>> origin/master
 --- !u!1 &1929195868
 GameObject:
   m_ObjectHideFlags: 0
