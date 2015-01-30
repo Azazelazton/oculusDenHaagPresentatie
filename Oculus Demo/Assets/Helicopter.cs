@@ -21,13 +21,16 @@ public class Helicopter : MonoBehaviour {
     {
         if (upForce < 0) upForce = 0;
         transform.rigidbody.velocity += upForce * transform.up*Time.deltaTime;
-        rotor.Rotate(new Vector3(0,0,upForce * Time.deltaTime * rotorAcceleration));
+		rotor.Rotate(new Vector3(0,0,15 * Time.deltaTime * rotorAcceleration)); //rotor.Rotate(new Vector3(0,0,upForce * Time.deltaTime * rotorAcceleration));
 
 
         if (Input.GetKey(KeyCode.LeftShift))
-            upForce += acceleration * Time.deltaTime;
+			upForce = 14;//upForce += acceleration * Time.deltaTime;
         else if (Input.GetKey(KeyCode.LeftControl))
-            upForce -= acceleration * Time.deltaTime;
+			upForce = 6;//upForce -= acceleration * Time.deltaTime;
+		else
+			upForce = 9.8f;
+
         if (Input.GetKey(KeyCode.W))
             transform.Rotate(new Vector3(-rotateSpeed * Time.deltaTime,0,0));
         if (Input.GetKey(KeyCode.S))
