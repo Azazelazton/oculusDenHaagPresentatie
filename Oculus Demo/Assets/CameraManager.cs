@@ -17,10 +17,12 @@ public class CameraManager : Photon.MonoBehaviour {
         if (useOculus)
         {
             noOculusObject.SetActive(false);
+            noOculusCopter.SetActive(false);
         }
         else
         {
             oculusObject.SetActive(false);
+            helicopter.SetActive(false);
         }
     }
 
