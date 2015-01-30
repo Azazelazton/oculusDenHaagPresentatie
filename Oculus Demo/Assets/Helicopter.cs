@@ -17,15 +17,13 @@ public class Helicopter : MonoBehaviour {
     [SerializeField]
     float rotorAcceleration = 15;
 
-	[SerializeField]
-	float autoTurnSpeedOnLean = 1;
-
     void Update()
     {
         if (upForce < 0) upForce = 0;
         transform.rigidbody.velocity += upForce * transform.up*Time.deltaTime;
 		rotor.Rotate(new Vector3(0,0,15 * Time.deltaTime * rotorAcceleration)); //rotor.Rotate(new Vector3(0,0,upForce * Time.deltaTime * rotorAcceleration));
 
+		Debug.Log (Input.GetAxis ("Throttle"));
 		upForce = 9.8f + Input.GetAxis ("Throttle") * 4;
 //        if (Input.GetKey(KeyCode.LeftShift))
 //			upForce = 14;//upForce += acceleration * Time.deltaTime;
@@ -41,7 +39,7 @@ public class Helicopter : MonoBehaviour {
 
 		Vector3 up = new Vector3(0, 1, 0);
         if (Input.GetAxis("Yaw") != 0)
-			transform.Rotate(up * (Input.GetAxis("Yaw") * rotateSpeed * Time.deltaTime));
+			transform.RotateAround(transform.position, up, (Input.GetAxis("Yaw") * rotateSpeed * Time.deltaTime));
     }
 
     void Reset()
